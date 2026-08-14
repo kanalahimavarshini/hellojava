@@ -34,3 +34,15 @@ class IfDemo {
         System.out.println("Program Ended");
     }
 }
+class Eligibility {
+    public static void main(String[] args) {
+
+        int marks = 75;
+
+        if (marks >= 35) {
+            System.out.println("Pass");
+        }
+
+        System.out.println("Exam Finished");
+    }
+}
