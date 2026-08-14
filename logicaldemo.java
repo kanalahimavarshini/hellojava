@@ -158,3 +158,18 @@ class Login {
         }
     }
 }
+class Admission {
+    public static void main(String[] args) {
+
+        int marks = 85;
+        boolean documentsVerified = true;
+
+        if (marks >= 75) {
+
+            if (documentsVerified) {
+                System.out.println("Admission Confirmed");
+            }
+
+        }
+    }
+}
