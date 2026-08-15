@@ -306,3 +306,36 @@ class SmallestElement {
         System.out.println("Smallest = " + smallest);
     }
 }
+class ArrayPractice {
+    public static void main(String[] args) {
+
+        int[] marks = {70, 85, 90, 60, 95};
+
+        // Find Sum
+        int sum = 0;
+        for (int i = 0; i < marks.length; i++) {
+            sum = sum + marks[i];
+        }
+
+        // Find Largest
+        int largest = marks[0];
+        for (int i = 1; i < marks.length; i++) {
+            if (marks[i] > largest) {
+                largest = marks[i];
+            }
+        }
+
+        // Find Smallest
+        int smallest = marks[0];
+        for (int i = 1; i < marks.length; i++) {
+            if (marks[i] < smallest) {
+                smallest = marks[i];
+            }
+        }
+
+        // Print Results
+        System.out.println("Sum = " + sum);
+        System.out.println("Largest = " + largest);
+        System.out.println("Smallest = " + smallest);
+    }
+}
