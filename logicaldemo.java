@@ -185,3 +185,14 @@ class ArrayDemo {
         System.out.println(marks[4]);
     }
 }
+class Fruits {
+    public static void main(String[] args) {
+
+        String[] fruits = {"Apple", "Banana", "Mango", "Orange"};
+
+        System.out.println(fruits[0]);
+        System.out.println(fruits[1]);
+        System.out.println(fruits[2]);
+        System.out.println(fruits[3]);
+    }
+}
