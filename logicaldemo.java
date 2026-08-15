@@ -196,3 +196,27 @@ class Fruits {
         System.out.println(fruits[3]);
     }
 }
+import java.util.Scanner;
+
+class ArrayInput {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int[] marks = new int[5];
+
+        System.out.println("Enter 5 marks:");
+
+        for (int i = 0; i < 5; i++) {
+            marks[i] = sc.nextInt();
+        }
+
+        System.out.println("Marks entered:");
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(marks[i]);
+        }
+
+        sc.close();
+    }
+}
