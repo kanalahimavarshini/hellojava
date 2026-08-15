@@ -12,3 +12,18 @@ class relationaldemo {
         System.out.println(a <= b);
     }
 }
+class StudentNames {
+    public static void main(String[] args) {
+
+        String[] students = {
+            "Divya",
+            "Rahul",
+            "Anu",
+            "Kiran"
+        };
+
+        for (String student : students) {
+            System.out.println(student);
+        }
+    }
+}
