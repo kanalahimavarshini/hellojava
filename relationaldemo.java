@@ -139,3 +139,17 @@ class Demo {
 
     }
 }
+class Cube {
+
+    static int cube(int n) {
+        return n * n * n;
+    }
+
+    public static void main(String[] args) {
+
+        int answer = cube(4);
+
+        System.out.println(answer);
+
+    }
+}
