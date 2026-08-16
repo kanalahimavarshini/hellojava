@@ -66,3 +66,6 @@ class Demo {
 
     }
 }
+static void student(String name, int age) {
+    System.out.println(name + " is " + age + " years old.");
+}
