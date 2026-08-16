@@ -111,3 +111,17 @@ class Demo {
 
     }
 }
+class Demo {
+
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+
+        int total = add(10, 20);
+
+        System.out.println(total * 2);
+
+    }
+}
