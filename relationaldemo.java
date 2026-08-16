@@ -97,3 +97,17 @@ class Demo {
 
     }
 }
+class Demo {
+
+    static int square(int n) {
+        return n * n;
+    }
+
+    public static void main(String[] args) {
+
+        int x = square(5);
+
+        System.out.println(x);
+
+    }
+}
