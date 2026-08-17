@@ -221,3 +221,9 @@ class Area {
 
     }
 }
+class Student {
+
+    String name;
+    int age;
+
+}
