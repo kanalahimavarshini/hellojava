@@ -480,3 +480,26 @@ public class Main {
 
     }
 }
+class Box {
+
+    int length;
+    int width;
+
+    Box() {
+        this(10, 20);
+    }
+
+    Box(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    void display() {
+        System.out.println(length + " " + width);
+    }
+
+    public static void main(String[] args) {
+        Box b = new Box();
+        b.display();
+    }
+}
