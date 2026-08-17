@@ -451,3 +451,32 @@ public class Main {
         s2.display();
     }
 }
+class Student {
+
+    String name;
+    int age;
+
+    Student() {
+        this("Unknown", 18);
+    }
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void display() {
+        System.out.println(name + " " + age);
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student s1 = new Student();
+
+        s1.display();
+
+    }
+}
