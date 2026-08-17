@@ -335,3 +335,23 @@ public class Main {
     }
 
 }
+class Student {
+
+    String name;
+    int age;
+
+    Student() {
+
+        name = "Unknown";
+        age = 18;
+
+    }
+
+    void display() {
+
+        System.out.println(name);
+        System.out.println(age);
+
+    }
+
+}
