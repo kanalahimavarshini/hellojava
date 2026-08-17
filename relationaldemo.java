@@ -243,3 +243,5 @@ public class Main {
     }
 
 }
+s1.name = "Divya";
+s1.age = 21;
