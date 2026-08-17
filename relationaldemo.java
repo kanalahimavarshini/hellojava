@@ -419,3 +419,35 @@ public class Main {
     }
 
 }
+class Student {
+
+    String name;
+    int age;
+
+    // Default constructor
+    Student() {
+        name = "Unknown";
+        age = 18;
+    }
+
+    // Parameterized constructor
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void display() {
+        System.out.println(name + " " + age);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Student s1 = new Student();
+        Student s2 = new Student("Divya", 21);
+
+        s1.display();
+        s2.display();
+    }
+}
