@@ -51,3 +51,24 @@ public class Main {
     }
 
 }
+class Animal {
+
+    String name = "Tom";
+
+}
+
+class Dog extends Animal {
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+
+        System.out.println(d.name);
+
+    }
+
+}
