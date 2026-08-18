@@ -28,3 +28,26 @@ class Animal {
 class Dog extends Animal {
 
 }
+class Animal {
+
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+
+}
+
+class Dog extends Animal {
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+
+        d.eat();
+
+    }
+
+}
