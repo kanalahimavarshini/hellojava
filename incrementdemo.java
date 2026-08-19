@@ -142,3 +142,29 @@ class Dog implements Animal, Pet {
     }
 
 }
+interface Printer {
+
+    void print();
+
+}
+
+class Report implements Printer {
+
+    @Override
+    public void print() {
+        System.out.println("Report");
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Printer p = new Report();
+
+        p.print();
+
+    }
+
+}
