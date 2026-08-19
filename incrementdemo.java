@@ -29,3 +29,17 @@ class incrementdemo {
         System.out.println(x);
     }
 }
+interface Animal {
+
+    void sound();
+
+}
+
+class Dog implements Animal {
+
+    @Override
+    public void sound() {
+        System.out.println("Bark");
+    }
+
+}
