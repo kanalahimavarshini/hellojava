@@ -121,3 +121,24 @@ class Dog extends Animal {
     }
 
 }
+interface Animal {
+    void eat();
+}
+
+interface Pet {
+    void play();
+}
+
+class Dog implements Animal, Pet {
+
+    @Override
+    public void eat() {
+        System.out.println("Eating");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Playing");
+    }
+
+}
