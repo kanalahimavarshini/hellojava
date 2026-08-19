@@ -399,3 +399,34 @@ public class Main {
     }
 
 }
+abstract class Shape {
+
+    abstract void draw();
+
+    void display() {
+        System.out.println("Drawing Shape");
+    }
+
+}
+
+class Circle extends Shape {
+
+    @Override
+    void draw() {
+        System.out.println("Drawing Circle");
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Circle c = new Circle();
+
+        c.draw();
+        c.display();
+
+    }
+
+}
