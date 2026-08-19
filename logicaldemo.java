@@ -519,3 +519,29 @@ public class Main {
     }
 
 }
+interface Printable {
+
+    void print();
+
+}
+
+class Report implements Printable {
+
+    @Override
+    public void print() {
+        System.out.println("Printing Report");
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Printable p = new Report();
+
+        p.print();
+
+    }
+
+}
