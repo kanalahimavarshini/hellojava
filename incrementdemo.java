@@ -69,3 +69,16 @@ public class Main {
     }
 
 }
+interface Animal {
+    void sound();
+}
+
+class Dog implements Animal {
+    @Override
+    public void sound() {
+        System.out.println("Dog");
+    }
+}
+
+Animal a = new Dog();
+a.sound();
