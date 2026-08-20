@@ -440,3 +440,35 @@ public class Main {
     }
 
 }
+public class Main {
+
+    static void divide(int a, int b) {
+
+        try {
+
+            System.out.println(a / b);
+
+        }
+
+        catch (ArithmeticException e) {
+
+            System.out.println("Cannot divide by zero");
+
+        }
+
+        finally {
+
+            System.out.println("Division Completed");
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        divide(20, 0);
+        divide(20, 5);
+
+    }
+
+}
