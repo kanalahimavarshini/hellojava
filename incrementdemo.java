@@ -267,3 +267,28 @@ public class Main {
     }
 
 }
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            System.out.println("Hello");
+
+        }
+
+        catch(Exception e) {
+
+            System.out.println("Error");
+
+        }
+
+        finally {
+
+            System.out.println("Always Executes");
+
+        }
+
+    }
+
+}
