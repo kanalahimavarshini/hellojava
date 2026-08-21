@@ -669,3 +669,20 @@ public class Main {
     }
 
 }
+import java.util.HashMap;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        HashMap<String, Integer> marks = new HashMap<>();
+
+        marks.put("Math", 95);
+        marks.put("Science", 90);
+        marks.put("English", 88);
+
+        System.out.println(marks.get("Science"));
+
+    }
+
+}
