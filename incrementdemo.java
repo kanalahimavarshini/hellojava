@@ -596,3 +596,20 @@ public class Main {
     }
 
 }
+import java.util.LinkedList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LinkedList<String> cities = new LinkedList<>();
+
+        cities.add("Delhi");
+        cities.add("Mumbai");
+        cities.add("Chennai");
+
+        System.out.println(cities);
+
+    }
+
+}
