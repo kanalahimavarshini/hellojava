@@ -613,3 +613,20 @@ public class Main {
     }
 
 }
+import java.util.HashSet;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        HashSet<String> fruits = new HashSet<>();
+
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Apple");
+
+        System.out.println(fruits);
+
+    }
+
+}
