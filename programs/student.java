@@ -12,3 +12,13 @@ class Student {
         System.out.println(isStudent);
     }
 }
+try {
+
+    // File operation
+
+}
+catch (IOException e) {
+
+    System.out.println("An error occurred.");
+
+}
