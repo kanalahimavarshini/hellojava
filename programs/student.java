@@ -131,3 +131,32 @@ public class Main {
     }
 
 }
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            BufferedWriter bw = new BufferedWriter(
+                new FileWriter("student.txt")
+            );
+
+            bw.write("Welcome to Java");
+
+            bw.close();
+
+            System.out.println("Written");
+
+        } catch (IOException e) {
+
+            System.out.println("Error");
+
+        }
+
+    }
+
+}
