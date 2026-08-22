@@ -160,3 +160,33 @@ public class Main {
     }
 
 }
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            BufferedWriter bw = new BufferedWriter(
+                new FileWriter("notes.txt", true)
+            );
+
+            bw.write("Java Collections");
+            bw.newLine();
+
+            bw.close();
+
+            System.out.println("Saved");
+
+        } catch (IOException e) {
+
+            System.out.println("Error");
+
+        }
+
+    }
+
+}
