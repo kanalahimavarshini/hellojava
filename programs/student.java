@@ -48,3 +48,27 @@ public class Main {
     }
 
 }
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer = new FileWriter("student.txt");
+
+            writer.write("Hello Java!");
+
+            writer.close();
+
+        } catch (IOException e) {
+
+            System.out.println("Error");
+
+        }
+
+    }
+
+}
