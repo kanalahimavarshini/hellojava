@@ -22,3 +22,29 @@ catch (IOException e) {
     System.out.println("An error occurred.");
 
 }
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer = new FileWriter("test.txt");
+
+            writer.write("Java File Handling");
+
+            writer.close();
+
+            System.out.println("Done");
+
+        } catch (IOException e) {
+
+            System.out.println("Error");
+
+        }
+
+    }
+
+}
