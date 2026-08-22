@@ -782,3 +782,10 @@ public class Main {
     }
 
 }
+File file = new File("student.txt");
+
+if (file.delete()) {
+    System.out.println("File deleted.");
+} else {
+    System.out.println("Unable to delete.");
+}
