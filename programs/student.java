@@ -410,3 +410,25 @@ public class Main {
     }
 
 }
+class MyThread extends Thread {
+
+    public void run() {
+        System.out.println("Thread finished.");
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        MyThread t = new MyThread();
+
+        t.start();
+        t.join(); // Wait for thread to finish
+
+        System.out.println("Thread is terminated.");
+
+    }
+
+}
