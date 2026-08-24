@@ -660,3 +660,14 @@ ps.setString(2,"John");
 ps.executeUpdate();
 
 System.out.println("Inserted");
+PreparedStatement ps =
+con.prepareStatement(
+"UPDATE student SET name=? WHERE id=?"
+);
+
+ps.setString(1,"David");
+ps.setInt(2,101);
+
+ps.executeUpdate();
+
+System.out.println("Updated");
