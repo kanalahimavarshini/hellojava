@@ -764,3 +764,15 @@ ps.setInt(1, 101);
 ps.setString(2, "Alice");
 
 ps.executeUpdate();
+Statement stmt = con.createStatement();
+
+ResultSet rs = stmt.executeQuery(
+    "SELECT * FROM student"
+);
+
+while (rs.next()) {
+
+    System.out.println(rs.getInt("id"));
+    System.out.println(rs.getString("name"));
+
+}
