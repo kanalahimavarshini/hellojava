@@ -671,3 +671,13 @@ ps.setInt(2,101);
 ps.executeUpdate();
 
 System.out.println("Updated");
+PreparedStatement ps =
+con.prepareStatement(
+"DELETE FROM student WHERE id=?"
+);
+
+ps.setInt(1,101);
+
+ps.executeUpdate();
+
+System.out.println("Deleted");
