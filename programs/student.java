@@ -798,3 +798,16 @@ while (rs.next()) {
     System.out.println(rs.getString("name"));
 
 }
+Statement stmt = con.createStatement();
+
+ResultSet rs = stmt.executeQuery(
+    "SELECT * FROM student"
+);
+
+while (rs.next()) {
+
+    String name = rs.getString("name");
+
+    System.out.println(name);
+
+}
