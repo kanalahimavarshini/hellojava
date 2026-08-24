@@ -640,3 +640,12 @@ public class Main {
     }
 
 }
+PreparedStatement ps =
+    con.prepareStatement(
+        "INSERT INTO student VALUES (?, ?)"
+    );
+
+ps.setInt(1, 1);
+ps.setString(2, "Alice");
+
+ps.executeUpdate();
