@@ -776,3 +776,13 @@ while (rs.next()) {
     System.out.println(rs.getString("name"));
 
 }
+PreparedStatement ps = con.prepareStatement(
+    "UPDATE student SET name=? WHERE id=?"
+);
+
+ps.setString(1, "David");
+ps.setInt(2, 101);
+
+int rows = ps.executeUpdate();
+
+System.out.println(rows + " row(s) updated.");
