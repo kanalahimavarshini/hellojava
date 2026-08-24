@@ -756,3 +756,11 @@ while (rs.next()) {
     System.out.println(rs.getString("name"));
 
 }
+PreparedStatement ps = con.prepareStatement(
+    "INSERT INTO student VALUES (?, ?)"
+);
+
+ps.setInt(1, 101);
+ps.setString(2, "Alice");
+
+ps.executeUpdate();
