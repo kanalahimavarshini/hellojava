@@ -681,3 +681,22 @@ ps.setInt(1,101);
 ps.executeUpdate();
 
 System.out.println("Deleted");
+Statement stmt =
+con.createStatement();
+
+ResultSet rs =
+stmt.executeQuery(
+"SELECT * FROM student"
+);
+
+while(rs.next()){
+
+System.out.println(
+rs.getInt("id")
+);
+
+System.out.println(
+rs.getString("name")
+);
+
+}
