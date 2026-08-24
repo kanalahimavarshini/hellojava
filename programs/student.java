@@ -786,3 +786,15 @@ ps.setInt(2, 101);
 int rows = ps.executeUpdate();
 
 System.out.println(rows + " row(s) updated.");
+Statement stmt = con.createStatement();
+
+ResultSet rs = stmt.executeQuery(
+    "SELECT * FROM student"
+);
+
+while (rs.next()) {
+
+    System.out.println(rs.getInt("id"));
+    System.out.println(rs.getString("name"));
+
+}
