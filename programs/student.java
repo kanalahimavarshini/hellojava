@@ -711,3 +711,11 @@ ps.setString(2,"Alice");
 ps.executeUpdate();
 
 System.out.println("Record Inserted");
+PreparedStatement ps = con.prepareStatement(
+    "INSERT INTO student VALUES (?, ?)"
+);
+
+ps.setInt(1, 101);
+ps.setString(2, "Alice");
+
+ps.executeUpdate();
