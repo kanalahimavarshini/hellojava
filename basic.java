@@ -581,3 +581,18 @@ public class Main {
     }
 
 }
+import java.util.function.Predicate;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Predicate<String> check =
+                s -> s.length() > 5;
+
+        System.out.println(check.test("Java"));
+        System.out.println(check.test("Programming"));
+
+    }
+
+}
