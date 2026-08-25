@@ -541,3 +541,16 @@ public class Main {
     }
 
 }
+import java.util.function.Consumer;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Consumer<String> print = name -> System.out.println(name);
+
+        print.accept("Alice");
+
+    }
+
+}
