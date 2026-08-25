@@ -554,3 +554,16 @@ public class Main {
     }
 
 }
+import java.util.function.Supplier;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Supplier<String> message = () -> "Welcome!";
+
+        System.out.println(message.get());
+
+    }
+
+}
