@@ -485,3 +485,16 @@ public class Main {
     }
 
 }
+@FunctionalInterface
+interface Greeting {
+
+    void sayHello();   // Only one abstract method
+
+    default void welcome() {
+        System.out.println("Welcome");
+    }
+
+    static void info() {
+        System.out.println("Greeting Interface");
+    }
+}
