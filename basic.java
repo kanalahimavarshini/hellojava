@@ -443,3 +443,15 @@ public class Main {
     }
 
 }
+interface Greeting {
+    void sayHello();
+}
+
+Greeting g = new Greeting() {
+
+    @Override
+    public void sayHello() {
+        System.out.println("Hello");
+    }
+
+};
