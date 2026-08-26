@@ -650,3 +650,9 @@ List<Integer> nums =
 nums.stream()
     .filter(n -> n > 20)
     .forEach(System.out::println);
+    List<String> names =
+        Arrays.asList("java", "python", "c++");
+
+names.stream()
+     .map(String::toUpperCase)
+     .forEach(System.out::println);
