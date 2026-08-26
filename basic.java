@@ -644,3 +644,9 @@ numbers.stream()
        List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
 
 Stream<String> stream = names.stream();
+List<Integer> nums =
+        Arrays.asList(10, 15, 20, 25, 30);
+
+nums.stream()
+    .filter(n -> n > 20)
+    .forEach(System.out::println);
