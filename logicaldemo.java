@@ -571,3 +571,20 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        List<Integer> nums =
+                Arrays.asList(20, 30, 40);
+
+        Optional<Integer> first =
+                nums.stream().findFirst();
+
+        System.out.println(first.get());
+
+    }
+
+}
