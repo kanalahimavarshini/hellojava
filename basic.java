@@ -715,3 +715,18 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        List<Integer> nums = Arrays.asList(10, 15, 20, 25, 30);
+
+        nums.stream()
+            .filter(n -> n > 20)
+            .forEach(System.out::println);
+
+    }
+
+}
