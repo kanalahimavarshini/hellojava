@@ -656,3 +656,9 @@ nums.stream()
 names.stream()
      .map(String::toUpperCase)
      .forEach(System.out::println);
+     List<Integer> nums =
+        Arrays.asList(5, 2, 8, 1, 4);
+
+nums.stream()
+    .sorted()
+    .forEach(System.out::println);
