@@ -636,3 +636,8 @@ public class Main {
     }
 
 }
+List<Integer> numbers = Arrays.asList(2, 5, 8, 9, 10);
+
+numbers.stream()
+       .filter(n -> n % 2 == 0)
+       .forEach(System.out::println);
