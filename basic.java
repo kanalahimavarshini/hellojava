@@ -662,3 +662,11 @@ names.stream()
 nums.stream()
     .sorted()
     .forEach(System.out::println);
+    import java.util.stream.Collectors;
+
+List<Integer> result =
+        nums.stream()
+            .filter(n -> n % 2 == 0)
+            .collect(Collectors.toList());
+
+System.out.println(result);
