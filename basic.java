@@ -670,3 +670,14 @@ List<Integer> result =
             .collect(Collectors.toList());
 
 System.out.println(result);
+List<String> names =
+        Arrays.asList("alice", "bob", "charlie");
+
+List<String> result =
+        names.stream()
+             .filter(name -> name.length() > 3)
+             .map(String::toUpperCase)
+             .sorted()
+             .collect(Collectors.toList());
+
+System.out.println(result);
