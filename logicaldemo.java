@@ -770,3 +770,21 @@ public class Main {
     }
 
 }
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalDate birthDate = LocalDate.of(2000, 5, 15);
+
+        LocalDate today = LocalDate.now();
+
+        Period age = Period.between(birthDate, today);
+
+        System.out.println(age.getYears());
+
+    }
+
+}
