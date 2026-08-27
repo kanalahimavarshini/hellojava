@@ -674,3 +674,18 @@ LocalDate d2 = LocalDate.now();
 System.out.println(d1.isBefore(d2));
 System.out.println(d1.isAfter(d2));
 System.out.println(d1.equals(d2));
+import java.time.LocalDate;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalDate today = LocalDate.now();
+
+        System.out.println("Today: " + today);
+        System.out.println("Tomorrow: " + today.plusDays(1));
+        System.out.println("Yesterday: " + today.minusDays(1));
+
+    }
+
+}
