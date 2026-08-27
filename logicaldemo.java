@@ -668,3 +668,9 @@ public class Main {
     }
 
 }
+LocalDate d1 = LocalDate.of(2026, 1, 1);
+LocalDate d2 = LocalDate.now();
+
+System.out.println(d1.isBefore(d2));
+System.out.println(d1.isAfter(d2));
+System.out.println(d1.equals(d2));
