@@ -757,3 +757,16 @@ public class Main {
     }
 
 }
+import java.time.LocalDate;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalDate date = LocalDate.parse("2026-12-25");
+
+        System.out.println(date);
+
+    }
+
+}
