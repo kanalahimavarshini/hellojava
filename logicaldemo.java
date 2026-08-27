@@ -636,3 +636,9 @@ public class Main {
     }
 
 }
+LocalDate today = LocalDate.now();
+
+System.out.println(today.getYear());
+System.out.println(today.getMonth());
+System.out.println(today.getDayOfMonth());
+System.out.println(today.getDayOfWeek());
