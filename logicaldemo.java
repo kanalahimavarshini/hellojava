@@ -655,3 +655,16 @@ public class Main {
     }
 
 }
+import java.time.LocalDateTime;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalDateTime current = LocalDateTime.now();
+
+        System.out.println(current);
+
+    }
+
+}
