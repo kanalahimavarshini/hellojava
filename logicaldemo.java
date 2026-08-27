@@ -642,3 +642,16 @@ System.out.println(today.getYear());
 System.out.println(today.getMonth());
 System.out.println(today.getDayOfMonth());
 System.out.println(today.getDayOfWeek());
+import java.time.LocalTime;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalTime time = LocalTime.now();
+
+        System.out.println(time);
+
+    }
+
+}
