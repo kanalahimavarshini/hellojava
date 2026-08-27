@@ -623,3 +623,16 @@ public class Main {
     }
 
 }
+import java.time.LocalDate;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalDate birthday = LocalDate.of(2000, 5, 15);
+
+        System.out.println(birthday);
+
+    }
+
+}
