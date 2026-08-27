@@ -706,3 +706,22 @@ public class Main {
     }
 
 }
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalDate start = LocalDate.of(2024, 1, 1);
+        LocalDate end = LocalDate.of(2026, 8, 27);
+
+        Period period = Period.between(start, end);
+
+        System.out.println(period.getYears());
+        System.out.println(period.getMonths());
+        System.out.println(period.getDays());
+
+    }
+
+}
