@@ -689,3 +689,20 @@ public class Main {
     }
 
 }
+import java.time.Duration;
+import java.time.LocalTime;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LocalTime start = LocalTime.of(9, 30);
+        LocalTime end = LocalTime.of(11, 15);
+
+        Duration duration = Duration.between(start, end);
+
+        System.out.println(duration.toMinutes());
+
+    }
+
+}
