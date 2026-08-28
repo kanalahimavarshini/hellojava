@@ -896,3 +896,22 @@ public static double sum(List<? extends Number> numbers) {
     return total;
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        List<String> students = new ArrayList<>();
+
+        students.add("Alice");
+        students.add("Bob");
+        students.add("Charlie");
+
+        for (String student : students) {
+            System.out.println(student);
+        }
+
+    }
+
+}
