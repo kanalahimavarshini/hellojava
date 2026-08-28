@@ -980,3 +980,29 @@ public class Main {
     }
 
 }
+import java.util.List;
+
+public class Main {
+
+    public static double sum(List<? extends Number> numbers) {
+
+        double total = 0;
+
+        for (Number n : numbers) {
+            total += n.doubleValue();
+        }
+
+        return total;
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> ints = List.of(10, 20, 30);
+        List<Double> doubles = List.of(1.5, 2.5);
+
+        System.out.println(sum(ints));
+        System.out.println(sum(doubles));
+
+    }
+
+}
