@@ -842,3 +842,33 @@ public class Main {
     }
 
 }
+class Box<T> {
+
+    private T value;
+
+    public void set(T value) {
+        this.value = value;
+    }
+
+    public T get() {
+        return value;
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Box<String> language = new Box<>();
+        language.set("Java");
+
+        Box<Integer> marks = new Box<>();
+        marks.set(95);
+
+        System.out.println(language.get());
+        System.out.println(marks.get());
+
+    }
+
+}
