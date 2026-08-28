@@ -826,3 +826,16 @@ public class Main {
     }
 
 }
+class Box<T extends Number> {
+
+    private T value;
+
+    public Box(T value) {
+        this.value = value;
+    }
+
+    public double square() {
+        return value.doubleValue() * value.doubleValue();
+    }
+
+}
