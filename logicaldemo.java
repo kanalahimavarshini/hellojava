@@ -885,3 +885,14 @@ public class Main {
     }
 
 }
+public static double sum(List<? extends Number> numbers) {
+
+    double total = 0;
+
+    for (Number n : numbers) {
+        total += n.doubleValue();
+    }
+
+    return total;
+
+}
