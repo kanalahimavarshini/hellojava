@@ -945,3 +945,16 @@ class Calculator<T extends Number> {
     }
 
 }
+import java.util.List;
+
+public class Main {
+
+    public static void printList(List<?> list) {
+
+        for (Object item : list) {
+            System.out.println(item);
+        }
+
+    }
+
+}
