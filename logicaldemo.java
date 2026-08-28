@@ -824,3 +824,21 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        List<String> names = new ArrayList<>();
+
+        names.add("Alice");
+        names.add("Bob");
+
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+    }
+
+}
