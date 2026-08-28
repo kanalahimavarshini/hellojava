@@ -915,3 +915,26 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void print(List<?> list) {
+
+        for (Object obj : list) {
+            System.out.println(obj);
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        List<String> names = Arrays.asList("Java", "Python");
+        List<Integer> nums = Arrays.asList(10, 20);
+
+        print(names);
+        print(nums);
+
+    }
+
+}
