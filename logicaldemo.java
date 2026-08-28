@@ -872,3 +872,16 @@ public class Main {
     }
 
 }
+import java.util.List;
+
+public class Main {
+
+    public static void printList(List<?> list) {
+
+        for (Object item : list) {
+            System.out.println(item);
+        }
+
+    }
+
+}
