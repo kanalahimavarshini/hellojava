@@ -849,3 +849,30 @@ public class Main {
     }
 
 }
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer =
+                    new FileWriter("message.txt");
+
+            writer.write("Welcome to Java I/O!");
+
+            writer.close();
+
+            System.out.println("Done!");
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
