@@ -912,3 +912,29 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            BufferedWriter bw =
+                    new BufferedWriter(new FileWriter("output.txt"));
+
+            bw.write("Hello");
+            bw.newLine();
+            bw.write("Java");
+
+            bw.close();
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
