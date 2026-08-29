@@ -907,3 +907,20 @@ public class Main {
     }
 
 }
+import java.io.FileWriter;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+
+        FileWriter writer = new FileWriter("java.txt");
+
+        writer.write("Learning Java I/O Streams");
+
+        writer.close();
+
+        System.out.println("Completed");
+
+    }
+
+}
