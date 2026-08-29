@@ -789,3 +789,32 @@ if (file.delete()) {
 } else {
     System.out.println("Unable to delete.");
 }
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileOutputStream fos =
+                    new FileOutputStream("sample.txt");
+
+            String text = "Hello Java";
+
+            fos.write(text.getBytes());
+
+            fos.close();
+
+            System.out.println("File written successfully.");
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
