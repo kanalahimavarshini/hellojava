@@ -938,3 +938,36 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+class Student implements Serializable {
+
+    int id;
+    String name;
+
+    Student(int id, String name){
+
+        this.id = id;
+        this.name = name;
+
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+
+        Student s = new Student(1,"Alice");
+
+        ObjectOutputStream out =
+                new ObjectOutputStream(
+                        new FileOutputStream("student.dat"));
+
+        out.writeObject(s);
+
+        out.close();
+
+    }
+
+}
