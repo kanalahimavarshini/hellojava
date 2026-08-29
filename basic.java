@@ -855,3 +855,30 @@ public class Main {
     }
 
 }
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer = new FileWriter("message.txt");
+
+            writer.write("Hello, Java I/O!");
+            writer.write("\nWelcome!");
+
+            writer.close();
+
+            System.out.println("File written successfully.");
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
