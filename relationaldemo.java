@@ -576,3 +576,30 @@ if(Files.exists(path)){
     System.out.println("Not Found");
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Path path = Path.of("java.txt");
+
+        try {
+
+            Files.writeString(path,
+                    "Learning Java NIO");
+
+            String text = Files.readString(path);
+
+            System.out.println(text);
+
+        } catch(IOException e){
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
