@@ -714,3 +714,28 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            Path source = Path.of("notes.txt");
+            Path backup = Path.of("backup.txt");
+
+            Files.copy(source, backup);
+
+            System.out.println(Files.readString(backup));
+
+        } catch(IOException e){
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
