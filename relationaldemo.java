@@ -700,3 +700,17 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) throws IOException {
+
+        Files.walk(Path.of("."))
+
+             .forEach(System.out::println);
+
+    }
+
+}
