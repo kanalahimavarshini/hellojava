@@ -652,3 +652,27 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            Files.copy(
+                    Path.of("source.txt"),
+                    Path.of("backup.txt"));
+
+            System.out.println("Copied!");
+
+        } catch(IOException e){
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
