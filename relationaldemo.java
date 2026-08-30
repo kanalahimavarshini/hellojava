@@ -503,3 +503,16 @@ class Box {
         b.display();
     }
 }
+import java.nio.file.Path;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Path path = Path.of("sample.txt");
+
+        System.out.println(path);
+
+    }
+
+}
