@@ -676,3 +676,27 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            Files.move(
+                    Path.of("old.txt"),
+                    Path.of("new.txt"));
+
+            System.out.println("Moved!");
+
+        } catch(IOException e){
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
