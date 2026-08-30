@@ -603,3 +603,28 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Path path = Path.of("students.txt");
+
+        try {
+
+            List<String> lines = Files.readAllLines(path);
+
+            for (String line : lines) {
+                System.out.println(line);
+            }
+
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
+}
