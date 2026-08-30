@@ -541,3 +541,27 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Path path = Path.of("message.txt");
+
+        try {
+
+            String text = Files.readString(path);
+
+            System.out.println(text);
+
+        } catch(IOException e){
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
