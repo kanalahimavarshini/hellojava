@@ -628,3 +628,27 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Path path = Path.of("photo.jpg");
+
+        try {
+
+            byte[] data = Files.readAllBytes(path);
+
+            System.out.println(data.length);
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
