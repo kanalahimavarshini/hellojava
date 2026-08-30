@@ -787,3 +787,27 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            Path path = Path.of("old.txt");
+
+            boolean deleted = Files.deleteIfExists(path);
+
+            System.out.println(deleted);
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
