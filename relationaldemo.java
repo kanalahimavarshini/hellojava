@@ -565,3 +565,14 @@ public class Main {
     }
 
 }
+Path path = Path.of("message.txt");
+
+if(Files.exists(path)){
+
+    System.out.println("File Exists");
+
+}else{
+
+    System.out.println("Not Found");
+
+}
