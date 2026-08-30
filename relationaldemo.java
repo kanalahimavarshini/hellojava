@@ -516,3 +516,28 @@ public class Main {
     }
 
 }
+import java.nio.file.*;
+import java.io.IOException;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Path path = Path.of("message.txt");
+
+        try {
+
+            Files.writeString(path,
+                    "Welcome to Java NIO!");
+
+            System.out.println("Written Successfully");
+
+        } catch (IOException e) {
+
+            System.out.println(e.getMessage());
+
+        }
+
+    }
+
+}
