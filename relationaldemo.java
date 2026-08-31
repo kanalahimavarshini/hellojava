@@ -946,3 +946,31 @@ public class Main {
     }
 
 }
+import java.lang.reflect.Constructor;
+
+class Student {
+
+    Student() {
+    }
+
+    Student(int id) {
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Class<?> cls = Student.class;
+
+        Constructor<?>[] constructors =
+                cls.getDeclaredConstructors();
+
+        for (Constructor<?> c : constructors) {
+            System.out.println(c);
+        }
+
+    }
+
+}
