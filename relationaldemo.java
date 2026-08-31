@@ -922,3 +922,27 @@ public class Main {
     }
 
 }
+import java.lang.reflect.Field;
+
+class Student {
+
+    int id;
+    String name;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Class<?> cls = Student.class;
+
+        Field[] fields = cls.getDeclaredFields();
+
+        for (Field field : fields) {
+            System.out.println(field.getName());
+        }
+
+    }
+
+}
