@@ -998,3 +998,28 @@ public class Main {
     }
 
 }
+import java.lang.reflect.Field;
+
+class Student {
+
+    private String name = "Alice";
+
+}
+
+public class Main {
+
+    public static void main(String[] args)
+            throws Exception {
+
+        Student s = new Student();
+
+        Field field =
+                Student.class.getDeclaredField("name");
+
+        field.setAccessible(true);
+
+        System.out.println(field.get(s));
+
+    }
+
+}
