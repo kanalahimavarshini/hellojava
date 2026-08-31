@@ -842,3 +842,13 @@ class Dog extends Animal {
     }
 
 }
+class Demo {
+
+    @Deprecated
+    void oldMethod() {
+
+        System.out.println("Old Method");
+
+    }
+
+}
