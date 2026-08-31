@@ -974,3 +974,27 @@ public class Main {
     }
 
 }
+import java.lang.reflect.Method;
+
+class Student {
+
+    public void greet() {
+        System.out.println("Hello!");
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+
+        Student s = new Student();
+
+        Method method =
+                Student.class.getMethod("greet");
+
+        method.invoke(s);
+
+    }
+
+}
