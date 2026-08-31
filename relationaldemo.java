@@ -894,3 +894,31 @@ class Dog extends Animal {
     }
 
 }
+import java.lang.reflect.Method;
+
+class Student {
+
+    public void display() {
+        System.out.println("Hello");
+    }
+
+    public void study() {
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Class<?> cls = Student.class;
+
+        Method[] methods = cls.getDeclaredMethods();
+
+        for (Method method : methods) {
+            System.out.println(method.getName());
+        }
+
+    }
+
+}
