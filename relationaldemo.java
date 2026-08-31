@@ -1050,3 +1050,30 @@ public class Main {
     }
 
 }
+import java.lang.reflect.Method;
+
+class Student {
+
+    public void display() {
+    }
+
+    private void secret() {
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Class<?> cls = Student.class;
+
+        Method[] methods = cls.getDeclaredMethods();
+
+        for (Method method : methods) {
+            System.out.println(method.getName());
+        }
+
+    }
+
+}
