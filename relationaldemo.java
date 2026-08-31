@@ -860,3 +860,21 @@ public class Main {
     }
 
 }
+class Student {
+
+    int id;
+    String name;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Class<?> cls = Student.class;
+
+        System.out.println(cls.getName());
+
+    }
+
+}
