@@ -1023,3 +1023,30 @@ public class Main {
     }
 
 }
+import java.lang.reflect.Method;
+
+class Calculator {
+
+    public int square(int x) {
+        return x * x;
+    }
+
+}
+
+public class Main {
+
+    public static void main(String[] args)
+            throws Exception {
+
+        Calculator c = new Calculator();
+
+        Method method =
+                Calculator.class.getMethod("square", int.class);
+
+        Object result = method.invoke(c, 5);
+
+        System.out.println(result);
+
+    }
+
+}
