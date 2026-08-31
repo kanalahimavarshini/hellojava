@@ -826,3 +826,19 @@ class Dog extends Animal {
     }
 
 }
+class Animal {
+
+    void sound() {
+        System.out.println("Animal Sound");
+    }
+
+}
+
+class Dog extends Animal {
+
+    @Override
+    void sound() {
+        System.out.println("Bark");
+    }
+
+}
