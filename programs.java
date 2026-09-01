@@ -199,3 +199,14 @@ OutputStream out =
 out.write("Hello".getBytes());
 
 socket.close();
+import java.io.InputStream;
+
+InputStream in =
+        client.getInputStream();
+
+byte[] buffer = new byte[100];
+
+int n = in.read(buffer);
+
+System.out.println(
+        new String(buffer, 0, n));
