@@ -65,3 +65,25 @@ public class Main {
     }
 
 }
+import java.net.InetAddress;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            InetAddress local = InetAddress.getLocalHost();
+
+            System.out.println("Host Name: " + local.getHostName());
+            System.out.println("IP Address: " + local.getHostAddress());
+
+        } catch (Exception e) {
+
+            System.out.println(e);
+
+        }
+
+    }
+
+}
