@@ -187,3 +187,15 @@ public class Main {
     }
 
 }
+import java.io.OutputStream;
+import java.net.Socket;
+
+Socket socket =
+        new Socket("localhost", 5000);
+
+OutputStream out =
+        socket.getOutputStream();
+
+out.write("Hello".getBytes());
+
+socket.close();
