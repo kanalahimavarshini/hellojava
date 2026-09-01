@@ -210,3 +210,10 @@ int n = in.read(buffer);
 
 System.out.println(
         new String(buffer, 0, n));
+        ServerSocket server =
+        new ServerSocket(5000);
+
+Socket client =
+        server.accept();
+
+System.out.println("Connected");
