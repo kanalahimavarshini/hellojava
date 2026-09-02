@@ -355,3 +355,39 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+class Student implements Serializable {
+
+    int id = 101;
+    String name = "Alice";
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            Student student = new Student();
+
+            ObjectOutputStream out =
+                    new ObjectOutputStream(
+                        new FileOutputStream("student.ser"));
+
+            out.writeObject(student);
+
+            out.close();
+
+            System.out.println("Object Serialized!");
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+
+    }
+
+}
