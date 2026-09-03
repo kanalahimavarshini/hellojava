@@ -515,3 +515,14 @@ public class Main {
     }
 
 }
+ArrayList<String> list = new ArrayList<>();
+
+list.add("Java");
+list.add("Python");
+list.add("C++");
+
+for (String lang : list) {
+
+    System.out.println(lang);
+
+}
