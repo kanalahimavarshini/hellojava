@@ -536,3 +536,20 @@ for (Integer key : map.keySet()) {
     System.out.println(key + " -> " + map.get(key));
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Set<String> fruits = new HashSet<>();
+
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Apple");
+
+        System.out.println(fruits);
+
+    }
+
+}
