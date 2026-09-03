@@ -526,3 +526,13 @@ for (String lang : list) {
     System.out.println(lang);
 
 }
+HashMap<Integer, String> map = new HashMap<>();
+
+map.put(1, "Alice");
+map.put(2, "Bob");
+
+for (Integer key : map.keySet()) {
+
+    System.out.println(key + " -> " + map.get(key));
+
+}
