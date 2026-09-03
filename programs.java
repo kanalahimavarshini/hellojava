@@ -401,3 +401,13 @@ class Student implements Serializable {
     transient String password;
 
 }
+ArrayList<String> list = new ArrayList<>();
+
+list.add("Java");
+list.add("Python");
+
+System.out.println(list.get(0));
+
+list.set(1, "C");
+
+System.out.println(list);
