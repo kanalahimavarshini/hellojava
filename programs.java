@@ -411,3 +411,20 @@ System.out.println(list.get(0));
 list.set(1, "C");
 
 System.out.println(list);
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        LinkedList<String> list = new LinkedList<>();
+
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Mango");
+
+        System.out.println(list);
+
+    }
+
+}
