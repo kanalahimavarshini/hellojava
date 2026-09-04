@@ -689,3 +689,26 @@ class Calculator<T extends Number> {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    static void printNumbers(List<? extends Number> list) {
+
+        for (Number n : list) {
+            System.out.println(n);
+        }
+
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> integers = Arrays.asList(10, 20, 30);
+        List<Double> doubles = Arrays.asList(1.5, 2.5, 3.5);
+
+        printNumbers(integers);
+        printNumbers(doubles);
+
+    }
+
+}
