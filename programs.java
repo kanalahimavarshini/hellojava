@@ -676,3 +676,16 @@ class Calculator<T extends Number> {
     }
 
 }
+class Calculator<T extends Number> {
+
+    private T number;
+
+    Calculator(T number) {
+        this.number = number;
+    }
+
+    double square() {
+        return number.doubleValue() * number.doubleValue();
+    }
+
+}
