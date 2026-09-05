@@ -946,3 +946,18 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+            FileReader reader = new FileReader("data.txt");
+        } catch (IOException e) {
+            System.out.println("File error: " + e.getMessage());
+        }
+
+    }
+
+}
