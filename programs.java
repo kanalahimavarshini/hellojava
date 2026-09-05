@@ -837,3 +837,18 @@ public class Main {
     }
 
 }
+try {
+
+    int[] numbers = {1, 2, 3};
+
+    System.out.println(numbers[5]);
+
+} catch (ArithmeticException e) {
+
+    System.out.println("Arithmetic Error");
+
+} catch (ArrayIndexOutOfBoundsException e) {
+
+    System.out.println("Invalid index");
+
+}
