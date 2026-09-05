@@ -932,3 +932,17 @@ public class Main {
     }
 
 }
+public class Main {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 0;
+
+        System.out.println(a / b); // Throws ArithmeticException
+
+        System.out.println("Program End");
+
+    }
+
+}
