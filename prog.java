@@ -116,3 +116,20 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        ArrayDeque<String> deque = new ArrayDeque<>();
+
+        deque.offer("A");
+        deque.offer("B");
+        deque.offer("C");
+
+        System.out.println(deque.poll());
+
+    }
+
+}
