@@ -36,3 +36,9 @@ pq.offer(10);
 pq.offer(20);
 
 System.out.println(pq.poll());
+ArrayDeque<String> deque = new ArrayDeque<>();
+
+deque.offer("A");
+deque.offer("B");
+
+System.out.println(deque.poll());
