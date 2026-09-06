@@ -29,3 +29,10 @@ colors.add("Blue");
 colors.add("Green");
 
 System.out.println(colors);
+PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+pq.offer(30);
+pq.offer(10);
+pq.offer(20);
+
+System.out.println(pq.poll());
