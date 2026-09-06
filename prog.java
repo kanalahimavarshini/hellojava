@@ -42,3 +42,21 @@ deque.offer("A");
 deque.offer("B");
 
 System.out.println(deque.poll());
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        List<String> fruits = new ArrayList<>();
+
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Apple");
+        fruits.add("Orange");
+
+        System.out.println(fruits);
+
+    }
+
+}
