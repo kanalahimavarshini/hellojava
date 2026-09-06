@@ -22,3 +22,10 @@ cities.add("Mumbai");
 cities.add("Hyderabad");
 
 System.out.println(cities);
+HashSet<String> colors = new HashSet<>();
+
+colors.add("Red");
+colors.add("Blue");
+colors.add("Green");
+
+System.out.println(colors);
