@@ -60,3 +60,21 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Set<String> fruits = new HashSet<>();
+
+        fruits.add("Apple");
+        fruits.add("Banana");
+        fruits.add("Apple"); // Duplicate
+        fruits.add("Orange");
+
+        System.out.println(fruits);
+
+    }
+
+}
