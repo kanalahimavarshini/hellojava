@@ -15,3 +15,10 @@ public class Main {
     }
 
 }
+LinkedList<String> cities = new LinkedList<>();
+
+cities.add("Delhi");
+cities.add("Mumbai");
+cities.add("Hyderabad");
+
+System.out.println(cities);
