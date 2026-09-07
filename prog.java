@@ -358,3 +358,21 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Map<Integer, String> students = new HashMap<>();
+
+        students.put(101, "Alice");
+        students.put(102, "Bob");
+
+        for (Map.Entry<Integer, String> entry : students.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+
+    }
+
+}
