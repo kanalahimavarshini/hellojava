@@ -240,3 +240,20 @@ public class Main {
     }
 
 }
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Map<Integer, String> students = new HashMap<>();
+
+        students.put(101, "Alice");
+        students.put(102, "Bob");
+
+        System.out.println(students.get(101));
+        System.out.println(students.get(105));
+
+    }
+
+}
