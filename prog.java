@@ -626,3 +626,18 @@ public class Main {
     }
 
 }
+public class Main {
+
+    public static void main(String[] args) {
+
+        int age = -1;
+
+        if (age < 0) {
+            throw new IllegalArgumentException("Age cannot be negative.");
+        }
+
+        System.out.println("Valid age");
+
+    }
+
+}
