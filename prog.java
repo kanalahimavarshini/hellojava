@@ -482,3 +482,20 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+public class Main {
+
+    static void readFile() throws IOException {
+
+        FileReader file = new FileReader("data.txt");
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Method declared with throws.");
+
+    }
+
+}
