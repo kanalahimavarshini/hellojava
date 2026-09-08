@@ -437,3 +437,24 @@ try {
     System.out.println("Cannot divide by zero.");
 
 }
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            int result = 10 / 0;
+
+            System.out.println(result);
+
+        } catch (ArithmeticException e) {
+
+            System.out.println("Division by zero is not allowed.");
+
+        }
+
+        System.out.println("Program continues.");
+
+    }
+
+}
