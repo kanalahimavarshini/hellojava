@@ -458,3 +458,18 @@ public class Main {
     }
 
 }
+try {
+
+    String s = null;
+
+    System.out.println(s.length());
+
+} catch (ArithmeticException e) {
+
+    System.out.println("Math Error");
+
+} catch (NullPointerException e) {
+
+    System.out.println("Null Error");
+
+}
