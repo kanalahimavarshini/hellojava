@@ -641,3 +641,32 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            File file = new File("data.txt");
+
+            if (file.createNewFile()) {
+
+                System.out.println("File created.");
+
+            } else {
+
+                System.out.println("File already exists.");
+
+            }
+
+        } catch (IOException e) {
+
+            System.out.println("Error creating file.");
+
+        }
+
+    }
+
+}
