@@ -909,3 +909,16 @@ public class Main {
     }
 
 }
+BufferedReader reader = null;
+
+try {
+
+    reader = new BufferedReader(new FileReader("data.txt"));
+
+} finally {
+
+    if (reader != null) {
+        reader.close();
+    }
+
+}code6
