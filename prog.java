@@ -670,3 +670,28 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer = new FileWriter("data.txt");
+
+            writer.write("Hello Java!");
+
+            writer.close();
+
+            System.out.println("Successfully written.");
+
+        } catch (IOException e) {
+
+            System.out.println("Write error.");
+
+        }
+
+    }
+
+}
