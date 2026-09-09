@@ -866,3 +866,26 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            FileWriter writer = new FileWriter("data.txt");
+
+            writer.write("Welcome");
+
+            writer.close();
+
+        } catch (IOException e) {
+
+            System.out.println("Error");
+
+        }
+
+    }
+
+}
