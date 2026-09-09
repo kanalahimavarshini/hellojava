@@ -754,3 +754,31 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            BufferedWriter writer =
+                    new BufferedWriter(new FileWriter("data.txt"));
+
+            writer.write("Java");
+
+            writer.newLine();
+
+            writer.write("Programming");
+
+            writer.close();
+
+        } catch (IOException e) {
+
+            System.out.println("Write error.");
+
+        }
+
+    }
+
+}
