@@ -1096,3 +1096,12 @@ public class Main {
     }
 
 }
+import java.io.Serializable;
+
+class Student implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    int id;
+    String name;
+}
