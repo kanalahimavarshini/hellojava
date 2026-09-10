@@ -1121,3 +1121,35 @@ public class Main {
     }
 
 }
+import java.io.*;
+
+class Student implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    int id;
+    String name;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try (ObjectInputStream in =
+                 new ObjectInputStream(
+                     new FileInputStream("student.ser"))) {
+
+            Student s = (Student) in.readObject();
+
+            System.out.println(s.name);
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+
+        }
+
+    }
+
+}
