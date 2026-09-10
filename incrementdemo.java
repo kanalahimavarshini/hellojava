@@ -1008,3 +1008,12 @@ public class Main {
     }
 
 }
+class Student implements Serializable {
+
+    int id;
+
+    String name;
+
+    transient String password;
+
+}
