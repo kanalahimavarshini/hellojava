@@ -1053,3 +1053,15 @@ public class Main {
     }
 
 }
+import java.io.Serializable;
+
+class User implements Serializable {
+
+    String username;
+    transient String password;
+
+    User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+}
