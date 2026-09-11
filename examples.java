@@ -37,3 +37,16 @@ class Main {
         System.out.println(rev);
     }
 }
+// 2. Palindrome Number
+class Main {
+    public static void main(String[] args) {
+        int n = 121, temp = n, rev = 0;
+
+        while (n > 0) {
+            rev = rev * 10 + n % 10;
+            n /= 10;
+        }
+
+        System.out.println(temp == rev);
+    }
+}
