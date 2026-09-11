@@ -126,3 +126,18 @@ class Main {
         System.out.println(set);
     }
 }
+// 8. Character Frequency using HashMap
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        String str = "programming";
+
+        HashMap<Character, Integer> map = new HashMap<>();
+
+        for (char c : str.toCharArray())
+            map.put(c, map.getOrDefault(c, 0) + 1);
+
+        System.out.println(map);
+    }
+}
