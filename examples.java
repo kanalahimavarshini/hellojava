@@ -25,3 +25,15 @@ class Main {
         System.out.println("Maximum Subarray Sum: " + maximum);
     }
 }
+// 1. Reverse a String
+class Main {
+    public static void main(String[] args) {
+        String str = "Java";
+        String rev = "";
+
+        for (int i = str.length() - 1; i >= 0; i--)
+            rev += str.charAt(i);
+
+        System.out.println(rev);
+    }
+}
