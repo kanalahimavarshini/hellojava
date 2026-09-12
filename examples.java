@@ -182,3 +182,10 @@ class Main {
         System.out.println(result);
     }
 }
+Set<Integer> nums = new HashSet<>();
+
+nums.add(10);
+nums.add(20);
+nums.add(10);
+
+System.out.println(nums);
