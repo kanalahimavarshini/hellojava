@@ -204,3 +204,6 @@ set.add(20);
 System.out.println(set.contains(10)); // true
 set.remove(20);
 System.out.println(set.size());        // 1
+Set<Integer> set = new HashSet<>();
+set.add(10);
+set.add(10);
