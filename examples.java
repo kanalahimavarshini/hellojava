@@ -189,3 +189,10 @@ nums.add(20);
 nums.add(10);
 
 System.out.println(nums);
+TreeSet<Integer> nums = new TreeSet<>();
+
+nums.add(30);
+nums.add(10);
+nums.add(20);
+
+System.out.println(nums);
