@@ -207,3 +207,20 @@ System.out.println(set.size());        // 1
 Set<Integer> set = new HashSet<>();
 set.add(10);
 set.add(10);
+// 11. Anagram Check
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        String a = "listen";
+        String b = "silent";
+
+        char[] x = a.toCharArray();
+        char[] y = b.toCharArray();
+
+        Arrays.sort(x);
+        Arrays.sort(y);
+
+        System.out.println(Arrays.equals(x, y));
+    }
+}
