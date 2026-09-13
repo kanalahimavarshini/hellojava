@@ -403,3 +403,10 @@ class Main {
         }
     }
 }
+HashMap<String, Integer> marks = new HashMap<>();
+
+marks.put("Java", 90);
+marks.put("DBMS", 85);
+
+System.out.println(marks.get("Java")); // 90
+System.out.println(marks.containsKey("DBMS")); // true
