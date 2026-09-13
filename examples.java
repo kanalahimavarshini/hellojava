@@ -543,3 +543,18 @@ public class Main {
         System.out.println(set);
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        int n = 153;
+        int original = n;
+        int sum = 0;
+
+        while (n != 0) {
+            int digit = n % 10;
+            sum += digit * digit * digit;
+            n /= 10;
+        }
+
+        System.out.println(original == sum ? "Armstrong" : "Not Armstrong");
+    }
+}
