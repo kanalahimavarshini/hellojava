@@ -702,3 +702,16 @@ public class Main {
         System.out.println(sum == n ? "Perfect Number" : "Not Perfect Number");
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        int n = 25;
+        String binary = "";
+
+        while (n > 0) {
+            binary = (n % 2) + binary;
+            n /= 2;
+        }
+
+        System.out.println(binary);
+    }
+}
