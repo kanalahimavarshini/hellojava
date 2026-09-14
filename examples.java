@@ -571,3 +571,14 @@ public class Main {
         System.out.println(rev);
     }
 }
+ArrayList<String> names = new ArrayList<>();
+
+names.add("Alice");
+names.add("Bob");
+names.add("Charlie");
+
+Iterator<String> it = names.iterator();
+
+while (it.hasNext()) {
+    System.out.println(it.next());
+}
