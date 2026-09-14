@@ -627,3 +627,16 @@ public class Main {
         System.out.println("b = " + b);
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        int n = 987654;
+        int count = 0;
+
+        while (n != 0) {
+            n /= 10;
+            count++;
+        }
+
+        System.out.println("Digits = " + count);
+    }
+}
