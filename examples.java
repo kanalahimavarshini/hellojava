@@ -582,3 +582,12 @@ Iterator<String> it = names.iterator();
 while (it.hasNext()) {
     System.out.println(it.next());
 }
+Iterator<String> it = names.iterator();
+
+while (it.hasNext()) {
+    String name = it.next();
+
+    if (name.equals("Bob")) {
+        it.remove();
+    }
+}
