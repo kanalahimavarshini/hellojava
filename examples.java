@@ -786,3 +786,8 @@ class Box<T> {
         return value;
     }
 }
+class Demo {
+    static <T> void display(T value) {
+        System.out.println(value);
+    }
+}
