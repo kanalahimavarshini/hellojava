@@ -954,3 +954,30 @@ public class Main {
         System.out.println("No pair found");
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        int[] a = {1, 3, 5, 7};
+        int[] b = {2, 4, 6, 8};
+
+        int[] result = new int[a.length + b.length];
+
+        int i = 0, j = 0, k = 0;
+
+        while (i < a.length && j < b.length) {
+            if (a[i] < b[j])
+                result[k++] = a[i++];
+            else
+                result[k++] = b[j++];
+        }
+
+        while (i < a.length)
+            result[k++] = a[i++];
+
+        while (j < b.length)
+            result[k++] = b[j++];
+
+        for (int n : result) {
+            System.out.print(n + " ");
+        }
+    }
+}
