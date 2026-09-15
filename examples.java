@@ -847,3 +847,24 @@ public class Main {
         System.out.println(result);
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        int n = 145;
+        int original = n;
+        int sum = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            int fact = 1;
+
+            for (int i = 1; i <= digit; i++) {
+                fact *= i;
+            }
+
+            sum += fact;
+            n /= 10;
+        }
+
+        System.out.println(original == sum ? "Strong Number" : "Not Strong Number");
+    }
+}
