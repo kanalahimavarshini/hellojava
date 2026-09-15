@@ -829,3 +829,12 @@ public class Main {
         System.out.println("Second smallest = " + second);
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java is a powerful programming language";
+
+        String[] words = str.trim().split("\\s+");
+
+        System.out.println("Number of words = " + words.length);
+    }
+}
