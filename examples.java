@@ -838,3 +838,12 @@ public class Main {
         System.out.println("Number of words = " + words.length);
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        String str = "Java Programming Language";
+
+        String result = str.replaceAll("\\s", "");
+
+        System.out.println(result);
+    }
+}
