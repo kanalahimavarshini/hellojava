@@ -810,3 +810,22 @@ public class Main {
             System.out.println("Not a Leap Year");
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {10, 5, 8, 2, 15};
+
+        int smallest = Integer.MAX_VALUE;
+        int second = Integer.MAX_VALUE;
+
+        for (int n : arr) {
+            if (n < smallest) {
+                second = smallest;
+                smallest = n;
+            } else if (n < second && n != smallest) {
+                second = n;
+            }
+        }
+
+        System.out.println("Second smallest = " + second);
+    }
+}
