@@ -1011,3 +1011,27 @@ public class Main {
     }
 
 }
+public class Main {
+    public static void main(String[] args) {
+        String str = "programming";
+
+        int[] freq = new int[256];
+
+        for (char c : str.toCharArray()) {
+            freq[c]++;
+        }
+
+        char maxChar = str.charAt(0);
+        int max = 0;
+
+        for (char c : str.toCharArray()) {
+            if (freq[c] > max) {
+                max = freq[c];
+                maxChar = c;
+            }
+        }
+
+        System.out.println("Most frequent = " + maxChar);
+        System.out.println("Frequency = " + max);
+    }
+}
