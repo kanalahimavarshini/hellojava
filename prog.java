@@ -1085,3 +1085,23 @@ public class Main {
     }
 
 }
+import java.util.HashSet;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = {3, 4, 5, 6, 7};
+
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int n : a) {
+            set.add(n);
+        }
+
+        for (int n : b) {
+            if (set.contains(n)) {
+                System.out.print(n + " ");
+            }
+        }
+    }
+}
