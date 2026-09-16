@@ -981,3 +981,18 @@ public class Main {
         }
     }
 }
+interface Greeting {
+    void sayHello();
+}
+
+class Demo {
+    public static void main(String[] args) {
+        Greeting g = new Greeting() {
+            public void sayHello() {
+                System.out.println("Hello!");
+            }
+        };
+
+        g.sayHello();
+    }
+}
