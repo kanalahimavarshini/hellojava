@@ -1039,3 +1039,25 @@ public class Main {
         System.out.println("Average = " + average);
     }
 }
+public class Main {
+    public static void main(String[] args) {
+        int[] arr = {-2, 5, 0, -7, 8, 0, 3};
+
+        int positive = 0;
+        int negative = 0;
+        int zero = 0;
+
+        for (int n : arr) {
+            if (n > 0)
+                positive++;
+            else if (n < 0)
+                negative++;
+            else
+                zero++;
+        }
+
+        System.out.println("Positive = " + positive);
+        System.out.println("Negative = " + negative);
+        System.out.println("Zero = " + zero);
+    }
+}
